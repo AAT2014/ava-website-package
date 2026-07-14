@@ -53,6 +53,7 @@ export default async function handler(req, res) {
 
     // Basic guardrails: cap history length and message size so one visitor
     // can't run up a huge bill or send an oversized payload.
+    console.log("KEY CHECK — exists:", !!process.env.ANTHROPIC_API_KEY, "length:", (process.env.ANTHROPIC_API_KEY || "").length, "starts with:", (process.env.ANTHROPIC_API_KEY || "").slice(0, 7));
     const trimmed = messages.slice(-20).map(m => ({
       role: m.role === "user" ? "user" : "assistant",
       content: String(m.content || "").slice(0, 4000)
