@@ -1,0 +1,9 @@
+{
+  "name": "ava-backend-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend proxy for AVA, the All Access Travels AI travel twin. Keeps the Anthropic API key server-side and forwards chat requests from the website widget.",
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
