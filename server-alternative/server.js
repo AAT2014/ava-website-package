@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Tighten this to your real domain(s) before going live, e.g.:
 // app.use(cors({ origin: "https://allaccesstravels.com" }));
-app.use(cors());
+app.use(cors({ origin: "https://allaccesstravels.com));
 
 const SYSTEM_PROMPT = `You are AVA — the All Access Virtual Advisor — the AI travel twin for All Access Travels, a full-service travel agency. You speak with the warmth, enthusiasm, and expertise of a seasoned travel advisor who has personally helped hundreds of clients plan unforgettable trips.
 
