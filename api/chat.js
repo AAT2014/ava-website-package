@@ -21,7 +21,7 @@ Your job:
 Keep responses focused and skimmable. Use occasional light formatting (short lists) when helpful, but don't overdo it.`;
 
 // Set this to your real site(s) once you're live, e.g. ["https://allaccesstravels.com"]
-const ALLOWED_ORIGINS = ["*"]; // tighten this before going live — see README
+const ALLOWED_ORIGINS = ["https://www.allaccesstravels.com"]; // tighten this before going live — see README
 
 function setCors(res, origin) {
   const allowed = ALLOWED_ORIGINS.includes("*") ? "*" : (ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0]);
